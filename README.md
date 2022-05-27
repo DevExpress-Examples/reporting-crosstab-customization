@@ -1,7 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/497018382/2022.1)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting - CrossTab Control Customization
 
 The project contains sample reports in which you can learn how to customize the XRCrossTab control.
@@ -23,7 +19,7 @@ The Crosstab control has the `name` data field in rows, the `store` data field i
 
 The original report preview is shown below:
 
-![Original Report Preview](images/original-report-hidetotals-preview.png)
+![Original Report Preview](Images/original-report-hidetotals-preview.png)
 
 The report in this example hides the totals for the **Gr1** and **Gr2** group field values, so only the **Gr3** total remains.
 
@@ -36,7 +32,7 @@ Invoke the Expression Editor and assign the following expression to the [RowVisi
 ```
 The resulting report preview is shown in the follolwing image:
 
-![Hide Totals](images/hide-totals.png)
+![Hide Totals](Images/hide-totals.png)
 
 ### Hide Detailed Records and Show the Total for the Specified Group
 
@@ -44,7 +40,7 @@ The Crosstab control has the `name` data field in rows, the `store` data field i
 
 The original report preview is shown below:
 
-![Original Report Preview](images/original-report-hidetotals-preview.png)
+![Original Report Preview](Images/original-report-hidetotals-preview.png)
 
 The report in this example hides the records in the **Gr1** group. The **Gr1** group total remains, the records and totals for other groups remain as well.
 
@@ -59,7 +55,7 @@ Note that a cell located in a nested group can access a data field bound to the 
 
 The resulting report preview is shown in the following image:
 
-![Hide Details and Show Total](images/hide-details-and-show-total.png)
+![Hide Details and Show Total](Images/hide-details-and-show-total.png)
 
 ### Hide Empty Rows or Columns With Null, Zero or No Values
 
@@ -75,7 +71,7 @@ Depending on the location of the data fields, horizontally or vertically, an emp
 
 The original report preview is shown below:
 
-![Original Report with Empty Columns Preview](images/original-report-hide-empty-columns.png)
+![Original Report with Empty Columns Preview](Images/original-report-hide-empty-columns.png)
 
 The report in this example hides a column/row if it has no non-zero values (missing, equal to null, or equal to 0).
 
@@ -92,7 +88,7 @@ Assign the same expression to the [ColumnVisible](https://docs.devexpress.com/Xt
 
 The resulting report preview is shown in the following image:
 
-![Hide Empty Rows or Columns ](images/hide-empty-rows-columns.png)
+![Hide Empty Rows or Columns ](Images/hide-empty-rows-columns.png)
 
 ### Hide Rows or Columns With Null or No Values
 
@@ -104,7 +100,7 @@ An empty column/row can appear in the following situations:
 
 The original report preview is shown below:
 
-![Original Report with Empty Columns Preview](images/original-report-hide-empty-columns.png)
+![Original Report with Empty Columns Preview](Images/original-report-hide-empty-columns.png)
 
 The report in this example hides the column/row if it has no values (or values equal to null), but displays the column/row if it has any values, including 0 (zero).
 
@@ -132,7 +128,7 @@ Implementation:
 
 The resulting report preview is shown in the following image:
 
-![Hide Empty Show Zero Rows or Columns](images/hide-null-show-zero-rows-columns.png)
+![Hide Empty Show Zero Rows or Columns](Images/hide-null-show-zero-rows-columns.png)
  
 
 ## Documentation
