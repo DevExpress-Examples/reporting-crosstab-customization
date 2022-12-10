@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/497018382/2022.1)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1091977)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting - CrossTab Control Customization
 
 The project contains sample reports in which you can learn how to customize the XRCrossTab control.
@@ -14,8 +9,6 @@ Run the project, in the application window select the desired example, and click
     - [Hide Detailed Records and Show the Total for the Specified Group](#hide-detailed-records-and-show-the-total-for-the-specified-group)
     - [Hide Empty Rows or Columns With Null, Zero or No Values](#hide-empty-rows-or-columns-with-null-zero-or-no-values)
     - [Hide Rows or Columns With Null or No Values](#hide-rows-or-columns-with-null-or-no-values)
-- [Use CountDistinct, Mode and Median Summary Types](#use-countdistinct-mode-and-median-summary-types)
-- [Html-Inspired Text Formatting](#html-inspired-text-formatting)
 
 ## How to Hide Cells, Rows and Columns That Meet Certain Conditions
 
@@ -137,33 +130,10 @@ The resulting report preview is shown in the following image:
 
 ![Hide Empty Show Zero Rows or Columns](Images/hide-null-show-zero-rows-columns.png)
  
-## Use CountDistinct, Mode and Median Summary Types
-
-The report demonstrates the use of the **CountDistinct**, **Mode** and **Median** summary types in the CrossTab control.
-
-The CrossTab control can display only one column for a single field. To show aggregates for mutilple functions in adjacent columns, the report uses [calculated fields](https://docs.devexpress.com/XtraReports/4813/detailed-guide-to-devexpress-reporting/shape-report-data/use-calculated-fields/calculated-fields-overview) - each field is used to calculate values for a certain function. 
-
-
-## Html-Inspired Text Formatting
-
-The Cross Tab cells take advantage of the [AllowMarkupText](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell.AllowMarkupText) option to display formatted text and images within cells. 
-
-In this example the Cross Tab **Count** header cell displays the formatted text using the following `Text` expression:
-```
-<href=https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.CrossTab.SummaryType>Count</href><br><size=-3>The number of values.</size>
-```
-The **CountDistinct** summary type data cells display the down arrow when the **CountDistinct** value is less than the **Count** value. The down-arrow image is added to the [XtraReport.ImageResources](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XtraReport.ImageResources) collection. The expression for the `XRCrossTabCell.Text` property contains the Image tag with the [ImageItem.Id](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.Drawing.ImageItem.Id) property value:  
-
-```
-IIF([QtyCount]>[QtyCountDistinct],[QtyCountDistinct] + '<image=downarrowbmp>', [QtyCountDistinct])
-```
 
 ## Documentation
 
 - [XRCrossTab](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.XRCrossTab)
 - [ColumnVisible](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell.ColumnVisible)
 - [RowVisible](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell.RowVisible)
-- [CrossTabDataField.SummaryType](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.CrossTab.CrossTabDataField.SummaryType)
-- [AllowMarkupText](https://docs.devexpress.com/XtraReports/DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell.AllowMarkupText)
-- [HTML-inspired Text Formatting](https://docs.devexpress.com/WindowsForms/4874/common-features/html-text-formatting)
 

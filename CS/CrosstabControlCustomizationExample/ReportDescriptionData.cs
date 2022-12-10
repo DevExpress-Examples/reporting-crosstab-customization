@@ -69,20 +69,13 @@ Invoke the Expression Editor and assign the following expression to the ColumnVi
 [cfValue2] > 0 
 6. Hide all columns and rows bound to the 'cfValue2' calculated field. For this, set the ColumnVisible property to false for cells [3,3] and [6,3] in the data area.
 ";
-        const string string5 = @"The CrossTab control can display only one column for a single field. To show aggregated values for multiple functions in adjacent columns, the report uses calculated fields - each field is used to calculate values for a particular function. 
-
-Column headers use the AllowMarkupText option to display formatted text with hyperlinks. The cell in the data area that displays CountDistinct values shows a down arrow when the CountDistinct value is less than the Count value. To do this, the cell has the AllowMarkupText option enabled and the expression binding for the Text property is specified as follows:
-
-IIF([QtyCount]>[QtyCountDistinct],[QtyCountDistinct] + '<image=downarrowbmp>', [QtyCountDistinct])
-"; 
-public static List<DataItem> GetData()
+        public static List<DataItem> GetData()
         {
             return new List<DataItem>() {
                 new DataItem("HideCertainTotals", "Hide Totals", string1),
                 new DataItem("HideGroupDetails", "Hide Detailed Records and Show the Total for the Specified Group", string2),
                 new DataItem("HideWhenNoNonZeroValues", "Hide Rows/Columns With Null, Zero or No Values", string3),
-                new DataItem("HideWhenNoOrNullValues", "Hide Rows/Columns With Null or No Values", string4),
-                new DataItem("NewAggregateFunctions", "Use CountDistinct, Median and Mode functions", string5)
+                new DataItem("HideWhenNoOrNullValues", "Hide Rows/Columns With Null or No Values", string4)
             };
         }
 
