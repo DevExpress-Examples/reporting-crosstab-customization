@@ -11,7 +11,7 @@ Run the project, in the application window select the desired example, and click
 - [How to Hide Cells, Rows and Columns That Meet Certain Conditions](#how-to-hide-cells-rows-and-columns-that-meet-certain-conditions)
     - [Hide Totals](#hide-totals)
     - [Hide Detailed Records and Show the Total for the Specified Group](#hide-detailed-records-and-show-the-total-for-the-specified-group)
-    - [Hide Empty Rows or Columns With Null, Zero or No Values](#how-to-hide-cells-rows-and-columns-that-meet-certain-conditions)
+    - [Hide Empty Rows or Columns With Null, Zero or No Values](#hide-empty-rows-or-columns-with-null-zero-or-no-values)
     - [Hide Rows or Columns With Null or No Values](#hide-rows-or-columns-with-null-or-no-values)
 
 ## How to Hide Cells, Rows and Columns That Meet Certain Conditions
